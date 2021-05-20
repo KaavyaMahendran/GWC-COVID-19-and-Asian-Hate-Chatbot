@@ -1,0 +1,86 @@
+def covidSymptoms():
+  print("Let's start by making sure that you don't have COVID-19.")
+  print(" ")
+  print("The most common symptoms of the coronavirus COVID-19 are: ")
+  print("   fever or chills")
+  print("   cough")
+  print("   shortness of breath or difficulty breathing")
+  print("   fatigue")
+  print("   muscle or body aches")
+  print("   headache")
+  print("   loss of taste or smell")
+  print("   sore throat")
+  print("   congestion or runny nose")
+  print("   nausea or vomiting")
+  print("   diarrhea")
+  print(" ")
+  ans = input("Do you have a lot of these symptoms? Please type yes or no. ")
+  if(ans == "yes"):
+    print("Oh no! It looks like you may be infected with COVID-19! You should get tested and self-quarantine immediately!")
+  if(ans == "no"):
+    print("Great! It looks like you are COVID-19 free!")
+
+def spread():
+  a = input(name + ", do you know how COVID-19 spreads? Please type yes or no. ")
+  if (a == "yes"):
+    print(" ")
+    print("Okay! Just in case you aren't sure, COVID-19 spreads mainly from person to person, through respiratory droplets produced when an infected person coughs or sneezes. Spread is more likely when people are in close contact with one another.")
+  elif (a == "no"):
+    print(" ")
+    print("That's alright! COVID-19 spreads mainly from person to person, through respiratory droplets produced when an infected person coughs or sneezes. Spread is more likely when people are in close contact with one another.")
+
+def protect():
+  an = input("Want to learn how to protect your family from COVID-19? Type yes or no. ")
+  if (an == "yes"):
+    print(" ")
+    print("Great! You can take precautions to avoid the coronavirus.")
+    print("   Avoid crowded places and close contact with people who are sick or showing symptoms.")
+    print("   Wash your hands frequently with soap.")
+    print("   Avoid touching your eyes, mouth, and nose frequently.")
+    print("   Wear a mask when out in public.")
+    print("   If the vaccine is available for your age in your area, get vaccinated.")
+  elif (an == "no"):
+    print(" ")
+    print("That's too bad. If you don't know how to protect yourself from catching the coronavirus, there is a higher chance you will become infected.")
+
+def hate():
+  print(name + ", have you heard about the hate towards Asian Americans and Pacific Islanders relating to the coronavirus pandemic?")
+  s = input("Please type yes or no. ")
+  if (s == "yes"):
+    print(" ")
+    print("Alright. It's good that you've heard about it.")
+    print("There have been a number of Anti-Asian hate crimes.")
+    print("Verbal harrassment is the most common, followed by shunning, physical assault, and even discrimination in the workplace.")
+    print("These hate crimes have been happening for over a year, and reports show that the attack rates have only persisted.")
+    print("Visit the website https://stopaapihate.org/ to learn more and help stop the hate.")
+  elif (s == "no"):
+    print(" ")
+    print("Well, it's an important topic to know about.")
+    print("There have been a number of Anti-Asian hate crimes.")
+    print("Verbal harrassment is the most common, followed by shunning, physical assault, and even discrimination in the workplace.")
+    print("These hate crimes have been happening for over a year, and reports show that the attack rates have only persisted.")
+    print("Visit the website https://stopaapihate.org/ to learn more and help stop the hate.")
+
+name = input("Hello, what is your first name? ")
+answer = input("Hello " + name + ", would you like to learn about COVID-19? Type yes or no. ")
+if (answer == "yes"):
+  print(" ")
+  print("That's great!")
+elif (answer == "no"):
+  print(" ")
+  print("Maybe another time then. Goodbye!")
+  exit()
+
+covidSymptoms()
+print(" ")
+spread()
+print(" ")
+protect()
+print(" ")
+hate()
+print(" ")
+print(name + ", here's a quick recap of everything you learned about COVID-19 today.")
+print("You learnt about the symptoms of the coronavirus, how the virus spreads, how to protect yourself from getting infected with COVID-19, and about the Asian hate crimes happening.")
+print(" ")
+print("Well, that's all there is to this COVID-19 chatbot.")
+print("Thanks for using this chatbot, and I hope you enjoyed learning about COVID-19 today " + name + "!")
